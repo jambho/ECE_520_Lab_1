@@ -105,7 +105,7 @@ The testbench tb_rgb_led_top sets CLK_CYCLES_PER_TOGGLE to 2 so the blinking sho
 
 - **Test Case 5 – Reset with invalid combos:** Reset is on while sw goes through 000, 011, 101, 110, and 111. All outputs stay at 0.
 
-![All Test Cases on One Waveform](figures\ECE_520_Testbench_Waveforms.png)
+![All Test Cases on One Waveform](figures/ECE_520_Testbench_Waveforms.png)
 ## Overview
 
 In this lab, a simple counter-based LED blinker was written in VHDL, tested in simulation, and programmed onto the Zybo Z7-10. Using a generic for the toggle count made it easy to shrink the count for fast simulations and use the full count on the real board. The blinker was then reused inside a top-level design that uses the switches to choose which color of the RGB LED blinks, turning the LED off when no switch or more than one switch is on. Both designs worked in simulation and on the board.
